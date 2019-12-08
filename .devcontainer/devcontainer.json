@@ -1,0 +1,29 @@
+{
+  "name": "Go",
+  "dockerFile": "Dockerfile",
+
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "go.gopath": "/go",
+    "go.inferGopath": true,
+    "go.useLanguageServer": true,
+    "[go]": {
+      "editor.snippetSuggestions": "none",
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.organizeImports": true
+      }
+    },
+    "gopls": {
+      "usePlaceholders": true,
+      "completeUnimported": true,
+      "watchFileChanges": true,
+      "deepCompletion": true
+    }
+  },
+
+  "extensions": [
+    "ms-vscode.go",
+    "editorconfig.editorconfig"
+  ]
+}
